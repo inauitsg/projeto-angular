@@ -1,5 +1,6 @@
+<div class="bg-info.bg-gradient">
 <div class="container">
-    <h6>Formulário de Cadastro</h6>
+    <h3>Formulário de Cadastro</h3>
     <code>Todos os campos devem ser preenchidos antes de salvá-los</code>
     <form #f="ngForm" (ngSubmit)="saveContato(f.value)">
         <input required class="form-control" type="text" #fnome="ngModel" ngModel name="nome" placeholder="Informe nome completo" />
@@ -39,4 +40,5 @@
         
     </form>
     <label>{{ msg }}</label>
+</div>
 </div>
