@@ -17,4 +17,9 @@ export class ConsultaContatoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  excluir(id:any){
+    this.serviceContato.excluir(id).subscribe(x => {window.location.reload()})
+ }
+
+
 }

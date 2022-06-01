@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
 import { DecodeTokenService } from '../decode-token.service';
+import { UsuarioService } from '../usuario.service';
 
 @Component({
   selector: 'app-login',
@@ -9,9 +10,13 @@ import { DecodeTokenService } from '../decode-token.service';
 })
 export class LoginComponent  {
 
+
+ 
+
   constructor(
     private auth: AuthenticationService,
-    private decodeToken: DecodeTokenService
+    private decodeToken: DecodeTokenService,
+
     ) { }
 
   logar(form: any){
@@ -27,5 +32,5 @@ export class LoginComponent  {
     console.log(usuario) 
   }
   
-
+  
 }
